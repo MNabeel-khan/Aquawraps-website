@@ -64,7 +64,7 @@ export default function Portfolio() {
               transition: 'all 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.24s',
             }}
           >
-            A selection of labels we&apos;ve designed for businesses across Pakistan.
+            A selection of labels we&apos;ve designed for businesses across Karachi.
           </p>
         </div>
 
