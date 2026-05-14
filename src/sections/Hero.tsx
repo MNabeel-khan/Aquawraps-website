@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 
 import { Phone, Droplets } from 'lucide-react'
 
-import { HeroWaterBg } from '../components/WaterEffects'
-
 function AnimatedStat({ target, label, suffix = '', delay }: { target: number; label: string; suffix?: string; delay: number }) {
 
   const [count, setCount] = useState(0)
