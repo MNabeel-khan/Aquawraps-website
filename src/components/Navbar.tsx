@@ -91,7 +91,7 @@ export default function Navbar() {
           <div
             className="absolute right-0 top-0 bottom-0 w-[280px] flex flex-col gap-6 p-8 pt-24"
             style={{
-              background: 'rgba(3, 4, 94, 0.95)',
+              background: 'linear-gradient(160deg, #0c1929 0%, #0f1f35 30%, #112240 70%, #0a1628 100%',
               backdropFilter: 'blur(16px)',
             }}
           >
