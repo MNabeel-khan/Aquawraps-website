@@ -33,7 +33,7 @@ export default function Navbar() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 h-16 flex items-center transition-all duration-300"
         style={{
-          background: scrolled ? 'linear-gradient(160deg, #0c1929 0%, #0f1f35 30%, #112240 70%, #0a1628 100%',
+          background:'linear-gradient(160deg, #0c1929 0%, #0f1f35 30%, #112240 70%, #0a1628 100%',
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)',
           boxShadow: scrolled ? '0 2px 20px rgba(0, 0, 0, 0.1)' : 'none',
