@@ -242,7 +242,6 @@ export default function Contact() {
                       className={inputClass + ' appearance-none cursor-pointer'}
                     >
                       <option value="" disabled>How many bottles?</option>
-                      <option value="50-100">50 - 100</option>
                       <option value="100-200">100 - 200</option>
                       <option value="200-500">200 - 500</option>
                       <option value="500-1000">500 - 1000</option>
