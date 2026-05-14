@@ -97,9 +97,9 @@ export default function Contact() {
             <div className="mt-10 space-y-6">
               {[
                 { icon: Mail, label: 'hello@aquawraps.pk', href: 'mailto:hello@aquawraps.pk' },
-                { icon: Phone, label: '+92-300-1234567', href: 'tel:+923001234567' },
-                { icon: MessageCircle, label: '+92-300-7654321', href: 'https://wa.me/923007654321?text=Hi%20AquaWraps,%20I%20want%20to%20order%20branded%20water%20bottles', highlight: true },
-                { icon: MapPin, label: 'Karachi \u00b7 Karachi \u00b7 Karachi', href: '#' },
+                { icon: Phone, label: '+923422892155', href: 'tel:+923422892155' },
+                { icon: MessageCircle, label: '+92-342-2892155', href: 'https://wa.me/923007654321?text=Hi%20AquaWraps,%20I%20want%20to%20order%20branded%20water%20bottles', highlight: true },
+                { icon: MapPin, label: 'Karachi', href: '#' },
               ].map((item, i) => {
                 const Icon = item.icon
                 return (
