@@ -177,10 +177,10 @@ export default function Hero() {
 </div>
 
             {/* Phone */}
-<a href="tel:+923001234567" className="inline-flex items-center gap-2 font-inter text-sm text-[#90E0EF] hover:text-[#48CAE4] transition-colors" style={{ opacity: mounted ? 1 : 0, transition: 'opacity 0.6s ease 1.2s' }}>
+<a href="tel:+923422892155" className="inline-flex items-center gap-2 font-inter text-sm text-[#90E0EF] hover:text-[#48CAE4] transition-colors" style={{ opacity: mounted ? 1 : 0, transition: 'opacity 0.6s ease 1.2s' }}>
 <Phone size={16} />
 
-              Or call us: +92-300-1234567
+              Or call us: +923422892155
 </a>
 
             {/* Stats */}
