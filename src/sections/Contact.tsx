@@ -51,7 +51,7 @@ export default function Contact() {
       id="contact"
       ref={ref}
       className="section-padding"
-      style={{ background: '#03045E' }}
+      style={{ background: 'linear-gradient(160deg, #0c1929 0%, #0f1f35 30%, #112240 70%, #0a1628 100%' }}
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
