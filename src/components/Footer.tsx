@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#03045E' }}>
+    <footer style={{ background: 'linear-gradient(160deg, #0c1929 0%, #0f1f35 30%, #112240 70%, #0a1628 100%' }}>
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-16 pt-20 pb-10">
         {/* Top Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
