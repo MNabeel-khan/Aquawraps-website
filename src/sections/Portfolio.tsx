@@ -4,9 +4,9 @@ const items = [
   { image: '/bottle-mockup-restaurant.png', title: 'The Royal Grill', category: 'Restaurant' },
   { image: '/bottle-mockup-wedding.png', title: 'Ayesha & Omar', category: 'Wedding' },
   { image: '/bottle-mockup-corporate.png', title: 'TechVision Pakistan', category: 'Corporate' },
-  { image: '/bottle-mockup-restaurant.png', title: 'Cafe Lumiere', category: 'Cafe' },
+  { image: '/swwetverse.PNG', title: 'sweetVerse', category: 'Cafe' },
   { image: '/bottle-collection-flatlay.png', title: 'Label Collection', category: 'Showcase' },
-  { image: '/bottle-mockup-restaurant.png', title: 'Cafe Lumiere', category: 'Cafe' },
+  { image: '/ab_mockup.PNG', title: 'Reality by AB', category: 'Content Creators' },
 ]
 
 export default function Portfolio() {
