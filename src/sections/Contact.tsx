@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Mail, Phone, MessageCircle, MapPin, Instagram, Facebook, Linkedin, CheckCircle, Loader2 } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 
 type FormStatus = 'default' | 'loading' | 'success' | 'error'
 
@@ -28,14 +29,24 @@ export default function Contact() {
     return () => observer.disconnect()
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setFormStatus('loading')
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus('success')
-    }, 1500)
-  }
+ const handleSubmit = (e: React.FormEvent) => {
+   e.preventDefault()
+   setFormStatus('loading')
+   emailjs.sendForm(
+     'service_ptr7un7',     // ← Step 2 se
+     'template_535rgai',    // ← Step 3 se
+     e.target as HTMLFormElement,
+     'ArpS3uGYN_RlYZd_Y'      // ← Step 4 se
+   )
+   .then(() => {
+     setFormStatus('success')
+     // Form clear karein
+     setFormData({ fullName: '', phone: '', businessName: '', email: '', industry: '', quantity: '', city: '', message: '' })
+   })
+   .catch(() => {
+     setFormStatus('error')
+   })
+}
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
