@@ -163,7 +163,7 @@ export default function Hero() {
 
             {/* Phone link */}
             <a
-              href="tel:+923001234567"
+              href="tel:+923422892155"
               className="inline-flex items-center gap-2 font-inter text-sm text-[#90E0EF] hover:text-white transition-colors duration-200"
               style={{
                 opacity: mounted ? 1 : 0,
@@ -171,7 +171,7 @@ export default function Hero() {
               }}
             >
               <Phone size={16} />
-              Or call us: +92-300-1234567
+              Or call us: +923422892155
             </a>
 
             {/* Stats Bar */}
