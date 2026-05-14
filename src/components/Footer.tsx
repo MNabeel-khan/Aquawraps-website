@@ -97,7 +97,7 @@ export default function Footer() {
               <li>
                 <div className="flex items-center gap-2 font-inter text-sm text-white/55">
                   <MapPin size={16} className="flex-shrink-0" />
-                  Karachi &middot; Karachi
+                  Karachi
                 </div>
               </li>
             </ul>
