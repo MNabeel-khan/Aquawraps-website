@@ -66,7 +66,7 @@ export default function Hero() {
 
   const [mounted, setMounted] = useState(false)
 
-  // 🔥 SLIDESHOW IMAGES — YEH 4-6 PHOTOS AAPNE PUBLIC FOLDER MEIN DALNI HAIN
+  // 🔥 SLIDESHOW IMAGES
 
   const images = [
 
@@ -82,7 +82,7 @@ export default function Hero() {
 
   const [current, setCurrent] = useState(0)
 
-  // 🔥 SLIDESHOW AUTO-PLAY (every 2 seconds)
+  // 🔥 AUTO-PLAY (3 seconds)
 
   useEffect(() => {
 
@@ -90,7 +90,7 @@ export default function Hero() {
 
       setCurrent((prev) => (prev + 1) % images.length)
 
-    }, 1000) // ← 1000 = 1 seconds, change kar sakte hain
+    }, 3000)
 
     return () => clearInterval(timer)
 
@@ -110,27 +110,21 @@ export default function Hero() {
       id="hero"
 
       className="relative min-h-[100dvh] flex items-center overflow-hidden"
+
+      style={{ background: 'linear-gradient(160deg, #0c1929 0%, #0f1f35 30%, #112240 70%, #0a1628 100%)' }}
 >
 
-      {/* Water Background Effects */}
-<HeroWaterBg />
+      {/* Background glow */}
+<div className="absolute inset-0 animate-blob-pulse" style={{
 
-      {/* Subtle grid overlay */}
-<div
+        background: 'radial-gradient(circle at 30% 50%, rgba(0, 119, 182, 0.12), transparent 60%)',
 
-        className="absolute inset-0 pointer-events-none"
+      }} />
+<div className="absolute inset-0" style={{
 
-        style={{
+        background: 'radial-gradient(circle at 70% 30%, rgba(0, 180, 216, 0.06), transparent 45%)',
 
-          backgroundImage: 'linear-gradient(rgba(0, 180, 216, 0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 180, 216, 0.015) 1px, transparent 1px)',
-
-          backgroundSize: '80px 80px',
-
-          zIndex: 2,
-
-        }}
-
-      />
+      }} />
 
       {/* Content */}
 <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 lg:px-16 py-32 lg:py-40">
@@ -140,42 +134,22 @@ export default function Hero() {
 <div className="w-full lg:w-[55%] space-y-8 text-center lg:text-left">
 
             {/* Label */}
-<div
-
-              className="section-label mx-auto lg:mx-0 inline-flex items-center gap-2"
-
-              style={{
-
-                opacity: mounted ? 1 : 0,
-
-                transform: mounted ? 'translateY(0)' : 'translateY(20px)',
-
-                transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s',
-
-              }}
->
+<div style={{ opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(20px)', transition: 'all 0.6s ease 0.3s' }}>
+<span className="section-label section-label-aqua inline-flex items-center gap-2">
 <Droplets size={14} style={{ color: '#00B4D8' }} />
 
-              Custom Branded Water Bottles
+                Custom Branded Water Bottles
+</span>
 </div>
 
             {/* Headline */}
-<h1
+<h1 className="font-space font-medium leading-[0.95] tracking-[-0.03em]" style={{
 
-              className="font-space font-medium leading-[0.95] tracking-[-0.03em]"
+              fontSize: 'clamp(2.8rem, 6vw, 5.5rem)',
 
-              style={{
+              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(40px)', transition: 'all 0.8s ease 0.45s',
 
-                fontSize: 'clamp(2.8rem, 6vw, 5.5rem)',
-
-                opacity: mounted ? 1 : 0,
-
-                transform: mounted ? 'translateY(0)' : 'translateY(40px)',
-
-                transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.45s',
-
-              }}
->
+            }}>
 <span className="gradient-text">Your Brand.</span>
 <br />
 <span className="gradient-text">Every Sip</span>
@@ -183,78 +157,38 @@ export default function Hero() {
 </h1>
 
             {/* Subtitle */}
-<p
+<p className="font-inter text-lg text-white/60 max-w-[480px] mx-auto lg:mx-0 leading-relaxed" style={{
 
-              className="font-inter text-lg text-white/60 max-w-[480px] mx-auto lg:mx-0 leading-relaxed"
+              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(20px)', transition: 'all 0.7s ease 0.9s',
 
-              style={{
-
-                opacity: mounted ? 1 : 0,
-
-                transform: mounted ? 'translateY(0)' : 'translateY(20px)',
-
-                transition: 'all 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.9s',
-
-              }}
->
+            }}>
 
               We turn ordinary water bottles into powerful branding tools for restaurants, weddings, and businesses in Karachi.
 </p>
 
             {/* CTA Buttons */}
-<div
+<div className="flex flex-wrap gap-4 justify-center lg:justify-start" style={{
 
-              className="flex flex-wrap gap-4 justify-center lg:justify-start"
+              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(20px)', transition: 'all 0.6s ease 1.1s',
 
-              style={{
-
-                opacity: mounted ? 1 : 0,
-
-                transform: mounted ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.95)',
-
-                transition: 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 1.1s',
-
-              }}
->
+            }}>
 <a href="#contact" className="cta-primary">Get a Free Quote</a>
 <a href="#portfolio" className="cta-secondary">See Our Work</a>
 </div>
 
             {/* Phone */}
-<a
-
-              href="tel:+923001234567"
-
-              className="inline-flex items-center gap-2 font-inter text-sm text-[#90E0EF] hover:text-[#48CAE4] transition-colors"
-
-              style={{
-
-                opacity: mounted ? 1 : 0,
-
-                transition: 'opacity 0.6s ease 1.2s',
-
-              }}
->
+<a href="tel:+923001234567" className="inline-flex items-center gap-2 font-inter text-sm text-[#90E0EF] hover:text-[#48CAE4] transition-colors" style={{ opacity: mounted ? 1 : 0, transition: 'opacity 0.6s ease 1.2s' }}>
 <Phone size={16} />
 
               Or call us: +92-300-1234567
 </a>
 
             {/* Stats */}
-<div
+<div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-4" style={{
 
-              className="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-4"
+              opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(20px)', transition: 'all 0.6s ease 1.3s',
 
-              style={{
-
-                opacity: mounted ? 1 : 0,
-
-                transform: mounted ? 'translateY(0)' : 'translateY(20px)',
-
-                transition: 'all 0.6s ease 1.3s',
-
-              }}
->
+            }}>
 <AnimatedStat target={500} label="Bottles Branded" suffix="+" delay={1800} />
 <div className="hidden sm:block w-px h-12 bg-gradient-to-b from-transparent via-[#0077B6]/30 to-transparent" />
 <AnimatedStat target={50} label="Happy Clients" suffix="+" delay={2000} />
@@ -263,44 +197,23 @@ export default function Hero() {
 </div>
 </div>
 
-          {/* RIGHT — Image Slideshow 🔥 */}
-<div
+          {/* RIGHT — Image Slideshow */}
+<div className="w-full lg:w-[45%] flex justify-center items-center relative" style={{
 
-            className="w-full lg:w-[45%] flex justify-center items-center relative"
+            opacity: mounted ? 1 : 0, transform: mounted ? 'translateY(0)' : 'translateY(30px)', transition: 'all 0.8s ease 1.0s',
 
-            style={{
+          }}>
 
-              opacity: mounted ? 1 : 0,
+            {/* Glow */}
+<div className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full animate-blob-pulse" style={{
 
-              transform: mounted ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
+              background: 'radial-gradient(circle, rgba(0, 180, 216, 0.1) 0%, transparent 70%)',
 
-              transition: 'all 0.8s ease 1.0s',
+              top: '50%', left: '50%', transform: 'translate(-50%, -50%)', filter: 'blur(50px)',
 
-            }}
->
+            }} />
 
-            {/* Glow behind slideshow */}
-<div
-
-              className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full animate-blob-pulse"
-
-              style={{
-
-                background: 'radial-gradient(circle, rgba(0, 180, 216, 0.1) 0%, rgba(0, 119, 182, 0.05) 50%, transparent 70%)',
-
-                top: '50%',
-
-                left: '50%',
-
-                transform: 'translate(-50%, -50%)',
-
-                filter: 'blur(50px)',
-
-              }}
-
-            />
-
-            {/* 🔥🔥🔥 IMAGE SLIDESHOW 🔥🔥🔥 */}
+            {/* 🔥 IMAGE SLIDESHOW */}
 <div className="relative w-[80%] max-w-[380px] aspect-square">
 
               {images.map((src, index) => (
@@ -314,13 +227,7 @@ export default function Hero() {
 
                   className="absolute inset-0 w-full h-full object-contain rounded-2xl transition-opacity duration-1000 ease-in-out"
 
-                  style={{
-
-                    opacity: current === index ? 1 : 0,
-
-                    filter: 'drop-shadow(0 20px 50px rgba(0, 180, 216, 0.2))',
-
-                  }}
+                  style={{ opacity: current === index ? 1 : 0 }}
 
                 />
 
@@ -330,27 +237,17 @@ export default function Hero() {
 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
 
                 {images.map((_, index) => (
-<div
+<div key={index} className="w-2 h-2 rounded-full transition-all duration-300" style={{
 
-                    key={index}
+                    background: current === index ? '#00B4D8' : 'rgba(255,255,255,0.3)',
 
-                    className="w-2 h-2 rounded-full transition-all duration-300"
+                    transform: current === index ? 'scale(1.3)' : 'scale(1)',
 
-                    style={{
-
-                      background: current === index ? '#00B4D8' : 'rgba(255,255,255,0.3)',
-
-                      transform: current === index ? 'scale(1.3)' : 'scale(1)',
-
-                    }}
-
-                  />
+                  }} />
 
                 ))}
 </div>
 </div>
-
-            {/* 🔥🔥🔥 SLIDESHOW END 🔥🔥🔥 */}
 </div>
 </div>
 </div>
