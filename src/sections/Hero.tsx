@@ -214,7 +214,7 @@ export default function Hero() {
             {/* Bottle image */}
             <div className="relative animate-float">
               <img
-                src="/bottle-mockup-restaurant.png"
+                src="/hot_n_roll_mockup.png"
                 alt="Branded water bottle on restaurant table"
                 className="relative z-10 w-[80%] max-w-[400px] mx-auto drop-shadow-2xl"
                 loading="eager"
