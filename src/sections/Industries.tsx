@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const industries = [
   {
-    image: '/swwetverse.png',
+    image: '/bottle-mockup-restaurent.png',
     title: 'Restaurants & Cafes',
     description: 'Replace generic bottled water with your own brand. Impress diners and keep the profits.',
   },
