@@ -141,7 +141,7 @@ export default function Hero() {
                 transition: 'all 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.9s',
               }}
             >
-              We turn ordinary water bottles into powerful branding tools for restaurants, weddings, and businesses across Pakistan.
+              We turn ordinary water bottles into powerful branding tools for restaurants, weddings, and businesses across Karachi.
             </p>
 
             {/* CTA Group */}
@@ -187,7 +187,7 @@ export default function Hero() {
               <div className="hidden sm:block w-px h-10 bg-white/10" />
               <AnimatedStat target={50} label="Happy Clients" suffix="+" delay={2000} />
               <div className="hidden sm:block w-px h-10 bg-white/10" />
-              <AnimatedStat target={3} label="Cities Served" delay={2200} />
+              <AnimatedStat target={1} label="Cities Served" delay={2200} />
             </div>
           </div>
 
