@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const industries = [
   {
-    image: '/bottle-mockup-restaurant.png',
+    image: '/swwetverse.png',
     title: 'Restaurants & Cafes',
     description: 'Replace generic bottled water with your own brand. Impress diners and keep the profits.',
   },
@@ -12,7 +12,7 @@ const industries = [
     description: 'Personalized bottles with couple names, dates, and elegant designs \u2014 a memorable touch for guests.',
   },
   {
-    image: '/bottle-mockup-corporate.png',
+    image: '/ab_mockup.PNG',
     title: 'Corporate & Offices',
     description: 'Branded water for boardrooms, conferences, and reception areas. Professional polish in every detail.',
   },
