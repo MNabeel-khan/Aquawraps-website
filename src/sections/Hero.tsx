@@ -74,6 +74,8 @@ export default function Hero() {
 
     '/ab_mockup.PNG',
 
+    '/demo.png',
+
     '/swwetverse.PNG',
 
   ]
