@@ -55,7 +55,6 @@ export default function Footer() {
                 'Weddings',
                 'Corporate',
                 'Events',
-                'Events',
                 'Cafes',
               ].map((item) => (
                 <li key={item}>
