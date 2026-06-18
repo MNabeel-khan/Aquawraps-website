@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 
 const items = [
-  { image: '/bottle-mockup-restaurant.png', title: 'The Royal Grill', category: 'Restaurant' },
+  { image: '/demo.png', title: 'Chaska Foods', category: 'Restaurant' },
   { image: '/bottle-mockup-wedding.png', title: 'Ayesha & Omar', category: 'Wedding' },
-  { image: '/bottle-mockup-corporate.png', title: 'TechVision Pakistan', category: 'Corporate' },
-  { image: '/swwetverse.PNG', title: 'sweetVerse', category: 'Cafe' },
+  { image: '/tech.png', title: 'CoreTech Pakistan', category: 'Corporate' },
+  { image: '/sweetverse.jpeg', title: 'SweetVerse', category: 'Cafe' },
   { image: '/bottle-collection-flatlay.png', title: 'Label Collection', category: 'Showcase' },
-  { image: '/ab_mockup.PNG', title: 'Reality by AB', category: 'Content Creators' },
+  { image: '/asim.png', title: 'Asim N Awan', category: 'Content Creators' },
 ]
 
 export default function Portfolio() {
