@@ -72,11 +72,13 @@ export default function Hero() {
 
     '/hot_n_roll_mockup.PNG',
 
-    '/ab_mockup.PNG',
+    '/asim.png',
 
     '/demo.png',
 
-    '/swwetverse.PNG',
+    '/sweetverse.jpeg',
+
+    '/tech.png',
 
   ]
 
