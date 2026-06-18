@@ -3,14 +3,14 @@ import { ArrowRight } from 'lucide-react'
 
 const services = [
   {
-    image: '/bottle-mockup-restaurant.png',
+    image: '/demo.png',
     title: 'Custom Label Design',
     description:
       'Our designers craft labels that match your brand identity \u2014 logos, colors, typography, and finishing effects like gold foil and embossing.',
     cta: 'Explore Design',
   },
   {
-    image: '/bottle-mockup-corporate.png',
+    image: '/tech.png',
     title: 'Premium Bottle Supply',
     description:
       'High-quality BPA-free bottles in multiple sizes (250ml, 500ml, 1L). Crystal-clear plastic or glass options with durable, waterproof labels.',
