@@ -13,11 +13,11 @@ const services = [
     image: '/tech.png',
     title: 'Premium Bottle Supply',
     description:
-      'High-quality BPA-free bottles in multiple sizes (250ml, 500ml, 1L). Crystal-clear plastic or glass options with durable, waterproof labels.',
+      'High-quality BPA-free bottles in multiple sizes (330ml, 500ml, 1.5L). Crystal-clear plastic bottle options with durable, waterproof labels.',
     cta: 'View Options',
   },
   {
-    image: '/bottle-mockup-wedding.png',
+    image: '/delievred.jpg',
     title: 'Print, Pack & Deliver',
     description:
       'We print, apply, quality-check, and deliver directly to your venue or doorstep across Karachi.',
