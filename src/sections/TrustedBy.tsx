@@ -45,7 +45,7 @@ export default function TrustedBy() {
           {clients.map((client, i) => (
             <span
               key={client}
-              className="font-inter text-sm md:text-base font-medium text-white/40 select-none whitespace-nowrap"
+              className="font-inter text-sm md:text-base font-medium text-white/55 select-none whitespace-nowrap"
               style={{
                 opacity: visible ? 0.4 : 0,
                 transition: `opacity 0.5s ease ${i * 0.1}s`,
