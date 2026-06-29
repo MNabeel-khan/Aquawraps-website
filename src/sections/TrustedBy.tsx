@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 
 const clients = [
-  'The Royal Grill',
+  'The Chaska Foods',
   'Events by Sara',
   'TechVision PK',
-  'Shaadi Planners',
+  'Asim N Awan',
   'Cafe Lumiere',
 ]
 
