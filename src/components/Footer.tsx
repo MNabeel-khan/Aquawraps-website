@@ -105,12 +105,11 @@ export default function Footer() {
             <div className="flex items-center gap-4 mt-6">
               {[
                 { icon: Instagram, label: 'Instagram' },
-                { icon: Facebook, label: 'Facebook' },
-                { icon: Linkedin, label: 'LinkedIn' },
+      
               ].map(({ icon: Icon, label }) => (
                 <a
                   key={label}
-                  href="#"
+                  href="https://www.instagram.com/aqua.wraps/"
                   className="text-white/40 hover:text-[#90E0EF] transition-colors"
                   aria-label={label}
                 >
