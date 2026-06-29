@@ -5,7 +5,7 @@ const testimonials = [
   {
     avatar: '/testimonial-avatar-1.jpg',
     name: 'Ahmed Hassan',
-    role: 'Owner, The Royal Grill',
+    role: 'Owner, The Chaska Foods',
     quote:
       'AquaWraps transformed how our customers see us. Our branded bottles are now part of the dining experience. Guests even take them home!',
     city: 'Karachi',
