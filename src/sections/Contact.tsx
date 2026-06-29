@@ -108,7 +108,7 @@ export default function Contact() {
             <div className="mt-10 space-y-6">
               {[
                 { icon: Mail, label: 'AquaWraps@gmail.com', href: 'mailto:Aquawraps@gmail.com' },
-                { icon: Phone, label: '+923422892155', href: 'tel:+923422892155' },
+                { icon: Phone, label: '+92433386962', href: 'tel:+92433386962' },
                 { icon: MessageCircle, label: '+923422892155', href: 'https://wa.me/923422892155?text=Hi%20AquaWraps,%20I%20want%20to%20order%20branded%20water%20bottles', highlight: true },
                 { icon: MapPin, label: 'Karachi', href: '#' },
               ].map((item, i) => {
@@ -142,12 +142,11 @@ export default function Contact() {
             <div className="flex items-center gap-4 mt-8">
               {[
                 { icon: Instagram, label: 'Instagram' },
-                { icon: Facebook, label: 'Facebook' },
-                { icon: Linkedin, label: 'LinkedIn' },
+                
               ].map(({ icon: Icon, label }) => (
                 <a
                   key={label}
-                  href="#"
+                  href="https://www.instagram.com/aqua.wraps/"
                   className="text-white/50 hover:text-[#90E0EF] transition-colors"
                   aria-label={label}
                 >
