@@ -7,7 +7,7 @@ const industries = [
     description: 'Replace generic bottled water with your own brand. Impress diners and keep the profits.',
   },
   {
-    image: '/bottle-mockup-wedding.png',
+    image: '/wedding.png',
     title: 'Weddings & Events',
     description: 'Personalized bottles with couple names, dates, and elegant designs \u2014 a memorable touch for guests.',
   },
