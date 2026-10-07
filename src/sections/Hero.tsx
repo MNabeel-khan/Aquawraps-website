@@ -74,11 +74,11 @@ export default function Hero() {
 
     '/ymobile.mockup.jpeg',
 
-    '/demo.png',
-
-    '/sweetverse.jpeg',
-
+    '/qistbazaar.jpeg', 
+    
     '/khan livestock.jpeg',
+
+    '/moreandmore.mockup.jpeg',
 
   ]
 
