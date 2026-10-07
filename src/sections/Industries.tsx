@@ -12,7 +12,7 @@ const industries = [
     description: 'Personalized bottles with couple names, dates, and elegant designs \u2014 a memorable touch for guests.',
   },
   {
-    image: '/tech.png',
+    image: '/coretech portroit.jpeg',
     title: 'Corporate & Offices',
     description: 'Branded water for boardrooms, conferences, and reception areas. Professional polish in every detail.',
   },
