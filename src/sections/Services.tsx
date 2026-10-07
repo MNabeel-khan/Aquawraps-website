@@ -10,7 +10,7 @@ const services = [
     cta: 'Explore Design',
   },
   {
-    image: '/tech.png',
+    image: '/ymobile.mockup.jpeg',
     title: 'Premium Bottle Supply',
     description:
       'High-quality BPA-free bottles in multiple sizes (330ml, 500ml, 1.5L). Crystal-clear plastic bottle options with durable, waterproof labels.',
