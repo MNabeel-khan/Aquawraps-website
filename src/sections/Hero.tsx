@@ -70,15 +70,15 @@ export default function Hero() {
 
   const images = [
 
-    '/hot_n_roll_mockup.PNG',
+    '/coretech.mockup.jpeg',
 
-    '/asim.png',
+    '/ymobile.mockup.jpeg',
 
     '/demo.png',
 
     '/sweetverse.jpeg',
 
-    '/tech.png',
+    '/khan livestock.jpeg',
 
   ]
 
