@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 
 const items = [
-  { image: '/demo.png', title: 'Chaska Foods', category: 'Restaurant' },
-  { image: '/wedding.png', title: 'Wusra & Amnah', category: 'Wedding' },
-  { image: '/tech.png', title: 'CoreTech Pakistan', category: 'Corporate' },
+  { image: '/moreandmore.mockup.jpeg', title: 'More & More', category: 'Retail Business' },
+  { image: '/wedding.png', title: 'Amnah's Nikkah', category: 'Wedding' },
+  { image: '/coretech.mockup.jpeg', title: 'CoreTech Pakistan', category: 'Corporate' },
   { image: '/sweetverse.jpeg', title: 'SweetVerse', category: 'Cafe' },
-  { image: '/bottle-collection-flatlay.png', title: 'Label Collection', category: 'Showcase' },
+  { image: '/khan livestock.jpeg', title: 'Khan Lifestock (KLF)', category: 'Cattle farm' },
   { image: '/asim.png', title: 'Asim N Awan', category: 'Content Creators' },
 ]
 
