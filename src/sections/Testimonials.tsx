@@ -21,7 +21,7 @@ const testimonials = [
   {
     avatar: '/testimonial-avatar-3.jpg',
     name: 'Saqib Khan',
-    role: 'CoreTECHPakistan',
+    role: 'CoreTECH Pakistan',
     quote:
       'We switched from generic bottled water to AquaWraps for all our meetings. It\u2019s a small detail that makes a big impression on clients.',
     city: 'Karachi',
